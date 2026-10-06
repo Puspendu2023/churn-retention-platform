@@ -38,5 +38,14 @@ python -c "import pandas as pd; print(pd.read_excel('data/raw/customer_data.xlsx
 ```
 
 ## Build status
-- [x] Phase 0 - Repository & environment setup
-- [ ] Phases 1-14 - pending
+- [x] Phases 0-13 built: pipeline, EDA, model, evaluation, app, tests, Dockerfile, report
+- [ ] Phase 14 - student review, signatures, screenshots, Docker build check
+
+## Run
+```bash
+python -m src.data_prep && python -m src.train_model && python -m src.evaluate_model
+pytest
+streamlit run src/app.py
+python report/build_report.py     # regenerates the PDF report
+```
+Docker (not yet built in the authoring environment): `docker build -t churn-platform . && docker run -p 8501:8501 churn-platform`
