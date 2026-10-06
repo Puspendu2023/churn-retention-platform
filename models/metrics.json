@@ -1,0 +1,52 @@
+{
+  "n_test": 440,
+  "accuracy": 0.5568181818181818,
+  "precision": 0.335,
+  "recall": 0.5193798449612403,
+  "f1": 0.4072948328267477,
+  "roc_auc": 0.5578902764276278,
+  "tn": 178,
+  "fp": 133,
+  "fn": 62,
+  "tp": 67,
+  "majority_baseline_accuracy": 0.7068181818181818,
+  "bands": {
+    "Low": {
+      "n": 77,
+      "actual_churn_rate": 0.22077922077922077
+    },
+    "Medium": {
+      "n": 232,
+      "actual_churn_rate": 0.3017241379310345
+    },
+    "High": {
+      "n": 131,
+      "actual_churn_rate": 0.32061068702290074
+    }
+  },
+  "coefficients": {
+    "Satisfaction_Score": -0.21874762287343694,
+    "Region_Central": -0.21694143914500508,
+    "Discount_Usage_Pct": -0.10638446228292325,
+    "App_Logins_30D": -0.07172422417521863,
+    "Customer_Segment_Value": -0.05935148938180941,
+    "Avg_Response_Hours": -0.05502135924626289,
+    "Age_Group_18-24": -0.04310147583768082,
+    "Customer_Segment_Premium": -0.03786411809626945,
+    "Age_Group_55+": -0.029836141446283618,
+    "Monthly_Spend_INR": -0.022015606823312304,
+    "Age_Group_45-54": -0.0172804174002373,
+    "Tenure_Months": -0.010456944676970024,
+    "Age_Group_25-34": -0.00027761233558644286,
+    "Region_East": 0.005464254073342263,
+    "Region_North": 0.028431991079155693,
+    "Age_Group_35-44": 0.05036176291675947,
+    "Transactions_90D": 0.05595695373585071,
+    "Customer_Segment_Growth": 0.05708172337505028,
+    "Region_South": 0.0636428699094928,
+    "Region_West": 0.07926843997998562,
+    "Days_Since_Last_Purchase": 0.22847873011007525,
+    "Support_Tickets_90D": 0.2506211571504358,
+    "Payment_Failures_90D": 0.3351813805486941
+  }
+}
